@@ -1,0 +1,51 @@
+@import 'mixins';
+@import "variables";
+
+@import 'normalize';
+@import "reset";
+@import "fonts";
+@import 'icons';
+@import 'buttons';
+
+@import 'swiper-bundle.min.scss';
+
+@import "blocks/modal";
+@import "blocks/header";
+@import "blocks/footer";
+@import 'swiper-config';
+
+
+body {
+  font-family: $basic_family;
+
+  &.hidden {
+    overflow: hidden;
+  }
+}
+
+button {
+  cursor: pointer;
+  border-width: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  line-height: 1.25;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
