@@ -184,12 +184,16 @@
 .dropdown-list {
   width: max-content;
   position: absolute;
-  top: 42.9px;
+  top: 41.5px;
   padding: 17px 0px 25px;
   opacity: 0;
   visibility: hidden;
   transition: 0.4s all;
   background-color: rgba(0, 0, 0, 0.6);
+
+  @include custom-media(1240px) {
+    top: 42.5px;
+  }
 
   @include custom-media(1100px) {
     position: relative;
