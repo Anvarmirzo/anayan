@@ -31,4 +31,28 @@
     height: 17px;
     background-size: contain;
   }
+
+  &.be {
+    background-image: url('../img/svg/be.svg');
+    width: 16px;
+    height: 10px;
+  }
+
+  &.instagram {
+    background-image: url('../img/svg/insta.svg');
+    width: 14px;
+    height: 14px;
+  }
+
+  &.vk {
+    background-image: url('../img/svg/vk.svg');
+    width: 17px;
+    height: 10px;
+  }
+
+  &.pinterest {
+    background-image: url('../img/svg/pinterest.svg');
+    width: 15px;
+    height: 18px;
+  }
 }
