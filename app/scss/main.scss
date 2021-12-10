@@ -10,13 +10,14 @@
 @import 'swiper-bundle.min.scss';
 
 @import "blocks/modal";
+@import "blocks/nav";
 @import "blocks/header";
 @import "blocks/footer";
 @import 'swiper-config';
 
 
 body {
-  font-family: $basic_family;
+  // font-family: $basic_family;
 
   &.hidden {
     overflow: hidden;

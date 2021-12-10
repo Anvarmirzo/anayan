@@ -1,3 +1,42 @@
 <nav class="header-nav">
-
+	<a class="header__logo" href="#" title="Home">
+		<span class="icon logo"></span>
+		Atayan Ruben
+	</a>
+	<button id="burger-btn" class="burger-btn" type="button" title="show menu">
+		<span class="icon burger">Show menu</span>
+	</button>
+	<div id="responsive-nav" class="responsive-nav">
+		<ul class="header-menu">
+			<li><a href="#">Gallery</a></li>
+			<li class="dropdown">
+				<a class="dropdown-toggler" href="#"><span class="icon triangle"></span>About</a>
+				<ul class="dropdown-list">
+					<li><a href="#">About author</a></li>
+					<li><a href="#">Technique & style</a></li>
+					<li><a href="#">Awords & Exibitions</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Contacts</a></li>
+		</ul>
+		<div class="header-widgets">
+			<form id="header-search-form" class="header-search-form">
+				<div class="input-wrapper">
+					<input class="header-search__input" name="search" type="search" placeholder="Search">
+				</div>
+				<button id="show-search-btn" class="header-search__btn active" type="button" title="Click to enter">
+					<span class="icon search-light">Search</span>
+				</button>
+			</form>
+			<a class="header-shop__btn" href="#">Shop</a>
+			<div class="lang-switcher">
+				<span class="lang-title">Language</span>
+				<button class="lang-current" type="button">En</button>
+				<ul class="lang-list">
+					<li><a href="#">Ru</a></li>
+					<li><a href="#">Ua</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
 </nav>
