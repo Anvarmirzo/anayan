@@ -1,1 +1,34 @@
-.icon {}
+.icon {
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-size: 0;
+  overflow: hidden;
+
+
+  &.logo {
+    background-image: url('../img/svg/logo.svg');
+    width: 32px;
+    height: 32px;
+  }
+
+  &.triangle {
+    background-image: url('../img/svg/triangle.svg');
+    width: 9px;
+    height: 9px;
+  }
+
+  &.search-light {
+    background-image: url('../img/svg/search-light.svg');
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+  }
+
+  &.burger {
+    background-image: url('../img/svg/burger.svg');
+    width: 31px;
+    height: 17px;
+    background-size: contain;
+  }
+}
