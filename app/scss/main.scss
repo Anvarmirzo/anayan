@@ -13,7 +13,9 @@
 @import "blocks/nav";
 @import "blocks/header";
 @import "blocks/footer";
+@import "contact";
 @import 'swiper-config';
+
 
 
 body {
@@ -49,4 +51,24 @@ a {
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   border: 0;
+}
+
+.title {
+  font-family: $forum_family;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 1.1;
+  text-transform: uppercase;
+  color: #353535;
+
+  @include block_767 {
+    font-size: 35px;
+  }
+}
+
+.subtitle {
+  font-family: $basic_family;
+  font-size: 16px;
+  line-height: 1.375;
+  color: #000000;
 }

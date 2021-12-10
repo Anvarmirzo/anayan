@@ -1,0 +1,75 @@
+.contact-page {
+  padding: 125px 375px 0;
+  background-color: #fff;
+  background-image: url('../img/bg/contact-bg.png');
+  background-repeat: no-repeat;
+  background-size: 400px;
+  background-position: 100% -65px;
+
+  @include block_1199 {
+    padding: 93px 185px 0;
+  }
+
+  @include block_991 {
+    background-size: 300px;
+    padding: 93px 92px 0;
+  }
+
+  @include block_767 {
+    padding: 93px 20px 0;
+    background-size: 270px;
+  }
+
+}
+
+.contact-page__title {
+  margin-bottom: 30px;
+}
+
+.contact-page__subtitle {
+  max-width: 530px;
+  margin-bottom: 40px;
+}
+
+.contact-form-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-bottom: 76px;
+
+  @include block_767 {
+    margin-bottom: 60px;
+    gap: 30px;
+  }
+
+  input {
+    font-family: $roboto_family;
+    font-size: 18px;
+    line-height: 1.17;
+    background-color: transparent;
+    color: #353535;
+    padding: 8px 12px;
+    border-bottom: 1px solid rgba(53, 53, 53, 1);
+    border-width: 0 0 1px 0;
+  }
+}
+
+.send-btn {
+  font-family: $roboto_family;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  color: #000000;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 1px solid #000000;
+  padding: 10px 68px;
+  width: 100%;
+}
+
+.contract-form {
+  margin-bottom: 62px;
+
+  @include block_767 {
+    margin-bottom: 21px;
+  }
+}
