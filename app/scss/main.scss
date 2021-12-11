@@ -14,12 +14,13 @@
 @import "blocks/header";
 @import "blocks/footer";
 @import "contact";
+@import "maps";
 @import 'swiper-config';
 
 
 
 body {
-  // font-family: $basic_family;
+  font-family: $basic_family;
 
   &.hidden {
     overflow: hidden;

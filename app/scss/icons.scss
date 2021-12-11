@@ -55,4 +55,18 @@
     width: 15px;
     height: 18px;
   }
+
+  &.resize {
+    background-image: url('../img/svg/resize.svg');
+    width: 18px;
+    height: 18px;
+    background-size: contain;
+  }
+
+  &.clock {
+    background-image: url('../img/svg/clock.svg');
+    width: 18px;
+    height: 18px;
+    background-size: contain;
+  }
 }

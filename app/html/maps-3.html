@@ -1,0 +1,88 @@
+@@include('blocks/head.html')
+
+<body class="map-page">
+	@@include('blocks/nav.html')
+	<section>
+		<div class="interactive-map">
+			<img class="image" src="./img/maps/map-3.jpg" alt="">
+			<p class="msg"></p>
+		</div>
+		<div class="map-info">
+			<h2 class="map__title">s-Hertogenosch</h2>
+			<span class="map__country">Netherlands</span>
+			<div class="map-details">
+				<p class="map__about">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+					voluptatum deleniti
+					atque corrupti
+					quos dolores et quas molestias excepturi sint occa</p>
+				<table class="map-table">
+					<tbody>
+						<tr>
+							<td><span class="icon resize"></span>Size:</td>
+							<td>80 x 65 cm</td>
+						</tr>
+						<tr>
+							<td><span class="icon clock"></span>Year:</td>
+							<td>2014 - 2015</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</section>
+
+	<section class="buy-print">
+		<div class="buy-print-img">
+			<img src="./img/blocks/buy.jpg" alt="s-Hertogenosch print">
+		</div>
+		<div class="buy-print-info">
+			<h2 class="buy-print__title">s-Hertogenosch print</h2>
+			<p class="buy-print__desc">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+				voluptatum deleniti atque
+				corrupti
+				quos dolores et quas molestias excepturi sint occa</p>
+			<table class="buy-print-table">
+				<tbody>
+					<tr>
+						<td>Size:</td>
+						<td>80 x 65 cm</td>
+					</tr>
+					<tr>
+						<td>Paper:</td>
+						<td>white tube</td>
+					</tr>
+					<tr>
+						<td>Edition:</td>
+						<td>1000 copies</td>
+					</tr>
+				</tbody>
+			</table>
+			<a class="buy-print-btn" href="#">Buy print</a>
+		</div>
+	</section>
+
+	<section class="other-maps">
+		<h2 class="other-maps__title">Other maps you may like</h2>
+		<div class="other-maps__wrapper">
+			<article class="other-maps__item">
+				<img class="other-maps__img" src="./img/blocks/deventer.jpg" alt="">
+				<a href="#" class="other-maps__text">
+					<h3 class="other-maps-item__title">Deventer</h3>
+					<span class="other-maps__country">Netherlands</span>
+				</a>
+			</article>
+			<article class="other-maps__item">
+				<img class="other-maps__img" src="./img/blocks/lviv.jpg" alt="">
+				<a href="#" class="other-maps__text">
+					<h3 class="other-maps-item__title">Lviv</h3>
+					<span class="other-maps__country">Ukraine</span>
+				</a>
+			</article>
+		</div>
+	</section>
+
+	@@include('blocks/footer.html')
+
+</body>
+
+</html>
