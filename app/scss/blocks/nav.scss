@@ -1,11 +1,13 @@
 .header-nav {
-  position: relative;
+  position: fixed;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 57px;
   padding: 13px 56px 14px 95px;
   background-color: rgba(0, 0, 0, 0.6);
+  z-index: 2;
 
   @include custom-media(1100px) {
     background-color: rgba(0, 0, 0, 0.8);
@@ -308,7 +310,7 @@
     display: block;
     width: 1px;
     height: 100%;
-    z-index: 11;
+    z-index: 1;
     margin-right: 10px;
     background-color: #959595;
 

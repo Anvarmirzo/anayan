@@ -1,0 +1,537 @@
+.tour-btn {
+  display: inline-block;
+  padding: 10px 42px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 2px solid #FFFFFF;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.hands-behind {
+  display: flex;
+  gap: 162px;
+  padding: 48px 251px 0 295px;
+
+  @include custom-media(1300px) {
+    gap: 62px;
+  }
+
+  @include block_1199 {
+    padding: 48px 140px;
+  }
+
+  @include block_991 {
+    padding: 33px 60px 34px;
+  }
+
+  @include block_767 {
+    padding-left: 20px;
+    padding-right: 20px;
+    flex-direction: column;
+    text-align: center;
+    gap: 33px;
+  }
+}
+
+.hands-behind-img {
+  img {
+    max-height: 590px;
+  }
+}
+
+.two-hands-info {
+  flex: 1;
+}
+
+.two-hands__title {
+  font-family: $forum_family;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 1.1;
+  text-transform: uppercase;
+  color: #353535;
+  max-width: 400px;
+  margin-bottom: 29px;
+
+  @include block_767 {
+    max-width: 100%;
+    font-size: 35px;
+    margin-bottom: 22px;
+  }
+}
+
+.two-hands__desc {
+  font-size: 16px;
+  line-height: 1.375;
+  color: #000000;
+  margin-bottom: 33px;
+
+  @include block_767 {
+    margin-bottom: 25px;
+  }
+
+  &.unique-style__desc {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 40px;
+    max-width: 455px;
+
+    @include block_767 {
+      max-width: 100%;
+      margin-bottom: 25px;
+    }
+  }
+}
+
+.two-hands__link {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-family: $roboto_family;
+  font-size: 16px;
+  line-height: 1.1875;
+  color: #0038FF;
+  width: max-content;
+
+  @include block_767 {
+    justify-content: center;
+    margin: 0 auto;
+  }
+}
+
+.home__darkline {
+  height: 2px;
+  background-color: #000;
+  margin-left: 138px;
+  margin-right: 138px;
+
+  @include block_767 {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+.desktop-only {
+  display: inline;
+
+  @include block_767 {
+    display: none;
+  }
+}
+
+.mobile-only {
+  display: none;
+
+  &.maps-slider-link__img {
+    width: 132px;
+    height: 132px;
+    border-radius: 50%;
+  }
+
+  @include block_767 {
+    display: inline;
+  }
+}
+
+.unique-style {
+  position: relative;
+  padding: 43px 0 109px;
+  margin: 42px 0;
+
+  @include block_767 {
+    margin: 0;
+    padding-top: 187px;
+    padding-bottom: 0;
+  }
+
+  &--padding {
+    @include block_767 {
+      padding-left: 55px;
+      padding-right: 55px;
+    }
+  }
+}
+
+.unique-style__img {
+  position: absolute;
+  right: 68px;
+  top: 0;
+  max-width: 50%;
+  height: 100%;
+
+  @include block_1199 {
+    max-width: 100%;
+  }
+
+  @include block_767 {
+    right: 0;
+    width: 100%;
+    height: max-content;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(90deg, #FFFFFF 4.42%, rgba(255, 255, 255, 0) 103.31%);
+
+    @include block_767 {
+      background-image: linear-gradient(360deg, #FFFFFF 41.24%, rgba(255, 255, 255, 0) 83.48%);
+      ;
+    }
+  }
+
+  img {
+    height: 100%;
+
+    @include block_767 {
+      object-fit: cover;
+      height: 291px;
+      width: 100%;
+
+    }
+  }
+}
+
+.unique-style__title {
+  position: relative;
+  z-index: 1;
+  font-family: $roboto_family;
+  font-size: 35px;
+  line-height: 1.17;
+  color: #353535;
+  margin-left: 172px;
+  margin-bottom: 66px;
+  max-width: 706px;
+
+  @include block_991 {
+    margin: 0 60px 15px;
+  }
+
+  @include block_767 {
+    margin: 0 69px 15px;
+    text-align: center;
+    font-size: 24px;
+  }
+}
+
+.gallery {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 164px 277px 141px;
+  min-height: 100vh;
+  background-image: url('../img/bg/gallery-bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #FFFFFF;
+
+  @include block_767 {
+    padding: 76px 32px 46px;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    background-color: rgba(72, 72, 72, 0.6);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+
+  .tour-btn {
+    position: relative;
+  }
+}
+
+.gallery__title {
+  font-family: $forum_family;
+  font-weight: 400;
+  font-size: 200px;
+  line-height: 1.1;
+  position: relative;
+  text-transform: uppercase;
+
+  @include block_767 {
+    font-size: 90px;
+  }
+
+  @include custom-media(360px) {
+    font-size: 60px;
+    margin-bottom: 30px;
+  }
+}
+
+.shop {
+  background-image: url('../img/bg/shop-bg.jpg');
+
+  .gallery__title {
+    margin-bottom: 18px;
+  }
+}
+
+.follow {
+  &--grid {
+    padding-top: 109px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 31px;
+
+    @include block_1199 {
+      padding-right: 40px;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include block_767 {
+      grid-template-columns: 1fr;
+      padding: 21px;
+    }
+  }
+}
+
+.follow-text {
+  grid-column: 3/4;
+
+  @include block_767 {
+    grid-column: 1/4;
+    text-align: center;
+  }
+
+  .icon.instagram {
+    width: 33px;
+    height: 33px;
+    background-size: contain;
+  }
+}
+
+.follow__title {
+  font-family: $butler_family;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 1.35;
+  color: #000000;
+  margin-bottom: 7px;
+}
+
+.follow__subtitle {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.375;
+  color: #000000;
+  margin-bottom: 41px;
+
+  @include block_767 {
+    margin-bottom: 21px;
+  }
+}
+
+.follow__link {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-size: 16px;
+  line-height: 1.375;
+  color: #0038FF;
+
+  @include block_767 {
+    justify-content: center;
+  }
+
+  &--border {
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 1px;
+      left: 0;
+      width: 100%;
+      border-bottom: 1px solid #0038FF;
+    }
+  }
+}
+
+.maps-catalog {
+  padding: 80px 140px 145px;
+
+  @include block_1199 {
+    padding: 70px;
+  }
+
+  @include block_991 {
+    padding: 33px 20px 54px;
+  }
+}
+
+.maps-catalog-header {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  margin-bottom: 53px;
+
+  @include block_767 {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 36px;
+    margin-bottom: 46px;
+  }
+}
+
+.maps-catalog__label {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  justify-self: end;
+  font-family: $roboto_family;
+  font-size: 18px;
+  line-height: 1.167;
+  color: #404040;
+
+  @include block_767 {
+    justify-self: start;
+  }
+}
+
+.maps-catalog__title {
+  font-family: $butler_family;
+  font-weight: normal;
+  font-size: 34px;
+  line-height: 1.2;
+  color: #000000;
+  margin-bottom: 7px;
+
+  @include block_767 {
+    margin-bottom: 14px;
+  }
+}
+
+.maps-catalog__subtitle {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.375;
+  color: #000000;
+}
+
+.maps-catalog__select {
+  border-width: 0 0 1px 0;
+  padding: 9px 0;
+  font-style: italic;
+  font-size: 18px;
+  line-height: 1.167;
+  color: #404040;
+  border-bottom: 1px solid #ABABAB;
+  /* hide default arrow */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: '';
+  background-color: #fff;
+}
+
+.maps-catalog-body {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 80px 20px;
+  counter-reset: listStyle;
+
+  @include block_991 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @include block_480 {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px 20px;
+  }
+
+  @include block_480 {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: '';
+      background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) -12.94%, #FFFFFF 77.06%);
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 170px;
+    }
+
+    &>li:nth-child(n+3) {
+      display: none;
+    }
+
+    &.active {
+      &::after {
+        display: none;
+      }
+
+      &>li:nth-child(n+3) {
+        display: block;
+
+      }
+    }
+  }
+}
+
+.show-map-catalog {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  column-gap: 9px;
+  width: 100%;
+  background-color: transparent;
+  font-family: $roboto_family;
+  font-style: italic;
+  font-size: 18px;
+  line-height: 1.167;
+  text-align: center;
+  color: #404040;
+
+  @include block_480 {
+    display: flex;
+  }
+
+  &.active {
+    .icon {
+      animation: mymove 1.5s infinite linear;
+
+      @keyframes mymove {
+        from {
+          transform: rotate(0deg);
+        }
+
+        to {
+          transform: rotate(360deg);
+        }
+      }
+    }
+  }
+}
+
+.maps-catalog-item {
+  counter-increment: listStyle;
+
+  &::before {
+    content: counter(listStyle, upper-alpha);
+    font-family: $butler_family;
+    font-size: 45px;
+    line-height: 1.2;
+    color: #000000;
+  }
+}
+
+.maps-letter__list {
+  margin-top: 15px;
+  display: grid;
+  gap: 6px;
+  font-size: 18px;
+  line-height: 1.38;
+  color: #000000;
+}
