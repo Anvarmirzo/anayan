@@ -6,16 +6,13 @@
 @import "fonts";
 @import 'icons';
 
-@import 'swiper-bundle.min.scss';
-
-@import "blocks/modal";
+@import 'swiper-config';
 @import "blocks/nav";
-@import "blocks/header";
 @import "blocks/footer";
+@import "home";
 @import "contact";
 @import "maps";
 @import "story";
-@import 'swiper-config';
 
 
 
@@ -27,7 +24,8 @@ body {
   }
 }
 
-button {
+button,
+select {
   cursor: pointer;
   border-width: 0;
 }
@@ -72,4 +70,8 @@ a {
   font-size: 16px;
   line-height: 1.375;
   color: #000000;
+}
+
+.nav-area {
+  padding-top: 57px;
 }

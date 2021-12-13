@@ -18,6 +18,12 @@
     height: 9px;
   }
 
+  &.triangle-dark {
+    background-image: url('../img/svg/triangle-dark.svg');
+    width: 9px;
+    height: 9px;
+  }
+
   &.search-light {
     background-image: url('../img/svg/search-light.svg');
     width: 20px;
@@ -66,6 +72,20 @@
   &.clock {
     background-image: url('../img/svg/clock.svg');
     width: 18px;
+    height: 18px;
+    background-size: contain;
+  }
+
+  &.arrow-right {
+    background-image: url('../img/svg/arrow-right.svg');
+    width: 21px;
+    height: 8px;
+    background-size: contain;
+  }
+
+  &.refresh {
+    background-image: url('../img/svg/refresh.svg');
+    width: 17px;
     height: 18px;
     background-size: contain;
   }

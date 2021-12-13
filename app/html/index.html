@@ -4,7 +4,283 @@
 
 <body>
 	@@include('blocks/nav.html')
+	<section>
+		<div class="maps-slider-wrapper">
+			<!-- Swiper -->
+			<div class="swiper maps-slider">
+				<div class="swiper-wrapper">
+					<article class="swiper-slide maps-slider-item">
+						<img src="./img/maps/map-1.jpg" alt="The world from the bird's-eye view">
+						<div class="maps-slider-text">
+							<h2 class="maps-slider__title">The world from the bird's-eye view</h2>
+							<p class="map-slider__desc">Welcome to the official site of a panoramic maps artist Ruben Atoyan. Take a
+								tour of more than 100
+								exclusive artworks.</p>
+						</div>
+						<div class="maps-slider-links">
+							<a class="tour-btn" href="#">Take a tour</a>
+							<a class="maps-slider__link" href="./maps-1.html">
+								<img class="maps-slider-link__img" src="./img/sm/venice-ava.jpg" alt="">
+								Venice panoramic map
+							</a>
+						</div>
+					</article>
+					<article class="swiper-slide maps-slider-item">
+						<img src="./img/maps/map-2.jpg" alt="">
+						<div class="maps-slider-text">
+							<h2 class="maps-slider__title">The world from the bird's-eye view</h2>
+							<p class="map-slider__desc">Welcome to the official site of a panoramic maps artist Ruben Atoyan. Take a
+								tour of more than 100
+								exclusive artworks.</p>
+						</div>
+						<div class="maps-slider-links">
+							<a class="tour-btn" href="#">Take a tour</a>
+							<a class="maps-slider__link" href="./maps-2.html">
+								<img class="maps-slider-link__img" src="./img/sm/venice-ava.jpg" alt="">
+								Venice panoramic map
+							</a>
+						</div>
+					</article>
+					<article class="swiper-slide maps-slider-item">
+						<img src="./img/maps/map-3.jpg" alt="">
+						<div class="maps-slider-text">
+							<h2 class="maps-slider__title">The world from the bird's-eye view</h2>
+							<p class="map-slider__desc">Welcome to the official site of a panoramic maps artist Ruben Atoyan. Take a
+								tour of more than 100
+								exclusive artworks.</p>
+						</div>
+						<div class="maps-slider-links">
+							<a class="tour-btn" href="#">Take a tour</a>
+							<a class="maps-slider__link" href="./maps-3.html">
+								<img class="maps-slider-link__img" src="./img/sm/venice-ava.jpg" alt="">
+								Venice panoramic map
+							</a>
+						</div>
+					</article>
+				</div>
+				<div class="swiper-pagination"></div>
+			</div>
+		</div>
+	</section>
 
+	<section class="hands-behind">
+		<div class="hands-behind-img">
+			<img class="maps-slider-link__img desktop-only" src="./img/blocks/hands.png" alt="">
+			<img class="maps-slider-link__img mobile-only" src="./img/blocks/venice_father_pic.jpg" alt="">
+		</div>
+		<div class="two-hands-info">
+			<h2 class="two-hands__title">two hands behinde</h2>
+			<p class="two-hands__desc">Ruben Atoyan — a painter, miniaturist, PhD in cartography science who dedicated life
+				for the creation of
+				extraordinary
+				panoramic maps.
+				<br>
+				<br>
+				For years Ruben Atoyan explored cartography, history and culture looking for a fusion between science and
+				art.This
+				research led him to a turning point in his life — at the age of 33 Dr. Ruben Atoyan created his first
+				cartography based
+				artwork and for more than 3 decades continues to draw patiently small roads for us to travel around the world.
+			</p>
+			<a class="two-hands__link" href="#">Learn more <span class="icon arrow-right"></span></a>
+		</div>
+	</section>
+
+	<hr class="home__darkline">
+
+	<section class="unique-style">
+		<h2 class="unique-style__title">Unique style laid on the cartography base</h2>
+		<div class="hands-behind unique-style--padding">
+			<div>
+				<p class="two-hands__desc unique-style__desc">The artist works in original engineering techniques from the XVII
+					century: manually,
+					ink and watercolor. The special
+					attention is given to general decoration of panoramas, where elements are stylised to antique maps.
+					<br>
+					<br>
+					Unrepeatable style makes Atoyan Ruben one of a kind. In the collection of the artist there are more than 100
+					hand drawn
+					artworks in a scales 1:0 – 1:600,000
+				</p>
+				<a class="two-hands__link" href="#">Learn more <span class="icon arrow-right"></span></a>
+			</div>
+		</div>
+		<div class="unique-style__img"><img src="./img/blocks/unique.jpg" alt=""></div>
+	</section>
+
+	<section class="gallery">
+		<h2 class="gallery__title">gallery</h2>
+		<a class="tour-btn" href="#">Take a tour</a>
+	</section>
+
+	<section class="maps-catalog">
+		<div class="maps-catalog-header">
+			<div>
+				<h2 class="maps-catalog__title">Maps Catalog</h2>
+				<p class="maps-catalog__subtitle">I was born in 1954 in Vanadzor, Armenia. In 1976 I graduated from the Moscow
+					University of Geodesy,
+					Airphotography and Cartography. I was</p>
+			</div>
+			<label class="maps-catalog__label">
+				<span class="icon triangle-dark"></span> Filter by:
+				<select class="maps-catalog__select" name="mapFilter" id="map-filter">
+					<option value="" selected disabled>Maps of Countries</option>
+					<option value="сountry">Country map</option>
+					<option value="city">City map</option>
+					<option value="architecture">Architecture</option>
+					<option value="island">Island map</option>
+					<option value="year">By year</option>
+				</select>
+			</label>
+		</div>
+
+		<ul class="maps-catalog-body" id="maps-catalog-body">
+			<li class="maps-catalog-item">
+				<ul class="maps-letter__list" data-filter="a">
+				</ul>
+			</li>
+			<li class="maps-catalog-item">
+				<ul class="maps-letter__list" data-filter="b">
+				</ul>
+			</li>
+			<li class="maps-catalog-item">
+				<ul class="maps-letter__list" data-filter="c">
+				</ul>
+			</li>
+			<li class="maps-catalog-item">
+				<ul class="maps-letter__list" data-filter="d">
+				</ul>
+			</li>
+			<li class="maps-catalog-item">
+				<ul class="maps-letter__list" data-filter="e">
+				</ul>
+			</li>
+			<li class="maps-catalog-item">
+				<ul class="maps-letter__list" data-filter="f">
+				</ul>
+			</li>
+			<li class="maps-catalog-item">
+				<ul class="maps-letter__list" data-filter="g">
+				</ul>
+			</li>
+			<li class="maps-catalog-item">
+				<ul class="maps-letter__list" data-filter="h">
+				</ul>
+			</li>
+			<li class="maps-catalog-item">
+				<ul class="maps-letter__list" data-filter="i">
+				</ul>
+			</li>
+			<li class="maps-catalog-item">
+				<ul class="maps-letter__list" data-filter="j">
+				</ul>
+			</li>
+			<li class="maps-catalog-item">
+				<ul class="maps-letter__list" data-filter="k">
+				</ul>
+			</li>
+			<li class="maps-catalog-item">
+				<ul class="maps-letter__list" data-filter="l">
+				</ul>
+			</li>
+			<li class="maps-catalog-item">
+				<ul class="maps-letter__list" data-filter="m">
+				</ul>
+			</li>
+			<li class="maps-catalog-item">
+				<ul class="maps-letter__list" data-filter="n">
+				</ul>
+			</li>
+			<li class="maps-catalog-item">
+				<ul class="maps-letter__list" data-filter="o">
+				</ul>
+			</li>
+			<li class="maps-catalog-item">
+				<ul class="maps-letter__list" data-filter="p">
+				</ul>
+			</li>
+			<li class="maps-catalog-item">
+				<ul class="maps-letter__list" data-filter="q">
+				</ul>
+			</li>
+			<li class="maps-catalog-item">
+				<ul class="maps-letter__list" data-filter="r">
+				</ul>
+			</li>
+			<li class="maps-catalog-item">
+				<ul class="maps-letter__list" data-filter="s">
+				</ul>
+			</li>
+			<li class="maps-catalog-item">
+				<ul class="maps-letter__list" data-filter="t">
+				</ul>
+			</li>
+			<li class="maps-catalog-item">
+				<ul class="maps-letter__list" data-filter="u">
+				</ul>
+			</li>
+			<li class="maps-catalog-item">
+				<ul class="maps-letter__list" data-filter="v">
+				</ul>
+			</li>
+			<li class="maps-catalog-item">
+				<ul class="maps-letter__list" data-filter="w">
+				</ul>
+			</li>
+			<li class="maps-catalog-item">
+				<ul class="maps-letter__list" data-filter="x">
+				</ul>
+			</li>
+			<li class="maps-catalog-item">
+				<ul class="maps-letter__list" data-filter="y">
+				</ul>
+			</li>
+			<li class="maps-catalog-item">
+				<ul class="maps-letter__list" data-filter="z">
+				</ul>
+			</li>
+		</ul>
+		<button class="show-map-catalog" id="show-map-catalog" type="button">
+			<span class="icon refresh"></span>
+			<span id="text-content">Show more</span>
+		</button>
+	</section>
+
+	<section class="gallery shop">
+		<h2 class="gallery__title">shop</h2>
+		<a class="tour-btn" href="#">Take a tour</a>
+	</section>
+
+	<section class="follow">
+		<div class="follow--grid">
+			<div class="follow-text">
+				<h2 class="follow__title">Follow us in instagram</h2>
+				<p class="follow__subtitle">Have a weekly inspiration by following the process of maps creation</p>
+				<a class="follow__link" href="#" target="_blank" rel="noopener noreferrer" title="Click to open"><span
+						class="icon instagram"></span><span class="follow__link--border">atayanruben</span></a>
+			</div>
+		</div>
+		<div class="swiper follow-slider">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<img src="./img/follow-slider/malta.jpg" alt="">
+				</div>
+				<div class="swiper-slide">
+					<img src="./img/follow-slider/bridge.jpg" alt="">
+				</div>
+				<div class="swiper-slide">
+					<img src="./img/follow-slider/sea.jpg" alt="">
+				</div>
+				<div class="swiper-slide">
+					<img src="./img/follow-slider/handwrite.jpg" alt="">
+				</div>
+				<div class="swiper-slide">
+					<img src="./img/follow-slider/malta.jpg" alt="">
+				</div>
+			</div>
+		</div>
+
+	</section>
 	@@include('blocks/footer.html')
 </body>
 

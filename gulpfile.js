@@ -5,6 +5,7 @@ const autoprefixer = require('gulp-autoprefixer');
 const imagemin = require('gulp-imagemin');
 const uglify = require('gulp-uglify-es').default;
 const cleanCSS = require('gulp-clean-css');
+const groupMedia = require('gulp-group-css-media-queries');
 const include = require('gulp-file-include');
 const webp = require('gulp-webp');
 const webpHTML = require('gulp-webp-html');
@@ -50,6 +51,7 @@ function scss() {
 				cascade: false,
 			}),
 		)
+		.pipe(groupMedia())
 		.pipe(cleanCSS({ level: 2 }))
 		.pipe(dest(buildFolder + '/css'))
 		.pipe(sass().on('error', sass.logError));
