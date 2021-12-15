@@ -3,9 +3,13 @@
 		<span class="icon logo"></span>
 		Atayan Ruben
 	</a>
-	<button id="burger-btn" class="burger-btn" type="button" title="show menu">
-		<span class="icon burger">Show menu</span>
+	<button id="burger-btn" class="burger-btn burger-btn--closed" type="button" title="show menu">
+		<span class="sr-only">Open menu</span>
+		<div class="burger-bar"></div>
+		<div class="burger-bar"></div>
+		<div class="burger-bar"></div>
 	</button>
+
 	<div id="responsive-nav" class="responsive-nav">
 		<ul class="header-menu">
 			<li><a href="#">Gallery</a></li>
@@ -31,8 +35,8 @@
 			<a class="header-shop__btn" href="#">Shop</a>
 			<div class="lang-switcher">
 				<span class="lang-title">Language</span>
-				<button class="lang-current" type="button">En</button>
-				<ul class="lang-list">
+				<button class="lang-current" type="button" id="lang-current">En</button>
+				<ul class="lang-list" id="lang-list">
 					<li><a href="#">Ru</a></li>
 					<li><a href="#">Ua</a></li>
 				</ul>

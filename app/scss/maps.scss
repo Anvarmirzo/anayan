@@ -7,6 +7,10 @@
   cursor: zoom-in;
   overflow: hidden;
   max-width: 100%;
+
+  @include block_767 {
+    display: none;
+  }
 }
 
 .round-loope {
