@@ -36,10 +36,13 @@
     flex-direction: column;
     justify-content: space-between;
     background-color: rgba(0, 0, 0, 0.8);
+    background-image: linear-gradient(350.29deg, rgba(0, 0, 0, 0.9) 44.54%, rgba(0, 0, 0, 0) 70.85%);
+    ;
     position: absolute;
     top: 0;
     max-width: 100%;
-    min-height: calc(100vh - 57px);
+    height: calc(100vh - 57px);
+    overflow-y: auto;
     bottom: 0;
     left: 0;
     right: 0;
@@ -113,8 +116,10 @@
 
   &:hover {
     .lang-list {
-      opacity: 1;
-      visibility: visible;
+      @media (min-width:1101px) {
+        opacity: 1;
+        visibility: visible;
+      }
     }
   }
 }
@@ -140,6 +145,13 @@
     height: 100vh;
     justify-content: center;
     transform: translate(-50%);
+    opacity: 0;
+    visibility: hidden;
+
+    &.active {
+      opacity: 1;
+      visibility: visible;
+    }
   }
 
   a {
@@ -149,6 +161,13 @@
 
     &:hover {
       background-color: rgba(0, 0, 0, 1.0);
+    }
+
+    @include custom-media(1100px) {
+      display: block;
+      width: max-content;
+      margin: 10px auto;
+      padding: 10px 20px;
     }
   }
 }
@@ -172,6 +191,10 @@
       opacity: 1;
       visibility: visible;
       height: auto;
+
+      @include custom-media(1100px) {
+        margin-top: 10px;
+      }
     }
   }
 }
@@ -181,6 +204,19 @@
   display: flex;
   align-items: center;
   column-gap: 8px;
+
+  &:hover {
+    .triangle {
+      transform: rotate(0deg);
+    }
+  }
+
+  .triangle {
+    @include custom-media(1100px) {
+      transition: 0.3s all;
+      transform: rotate(-90deg);
+    }
+  }
 }
 
 .dropdown-list {
@@ -190,7 +226,7 @@
   padding: 17px 0px 25px;
   opacity: 0;
   visibility: hidden;
-  transition: 0.4s all;
+  transition: 0.3s all;
   background-color: rgba(0, 0, 0, 0.6);
 
   @include custom-media(1240px) {
@@ -203,10 +239,7 @@
     top: 0;
     background-color: transparent;
     height: 0;
-    overflow: hidden;
-    opacity: 1;
-    visibility: visible;
-    margin-top: 10px;
+    margin-top: 0;
   }
 
   a {
@@ -269,6 +302,7 @@
   line-height: 1.1;
   color: #707070;
   opacity: 0;
+  transition: .3s all;
   visibility: hidden;
   overflow: hidden;
   width: 0;
@@ -396,8 +430,60 @@
   background-color: transparent;
   display: none;
   z-index: 2;
+  width: 40px;
+  height: 40px;
+  transition: all 0.3s;
 
   @include custom-media(1100px) {
     display: block;
+  }
+}
+
+
+.burger-bar {
+  transition: all 0.3s;
+  height: 2px;
+  width: 100%;
+  display: block;
+  background-color: white;
+
+  &:nth-of-type(2) {
+    margin: 8px 0;
+  }
+}
+
+
+.burger-btn--closed {
+  transition-delay: 0.3s;
+
+  .burger-bar:nth-of-type(2) {
+    width: 75%;
+    transition-property: margin, height, width;
+    transition-delay: 0.3s, 0.3s, 0s;
+    margin-left: auto;
+  }
+
+  .burger-bar:nth-of-type(3) {
+    width: 100%;
+  }
+}
+
+.burger-btn--opened {
+  .burger-bar:nth-of-type(1) {
+    transform: rotate(45deg);
+    transition-delay: 0.3s;
+    height: 2px;
+  }
+
+  .burger-bar:nth-of-type(2) {
+    opacity: 0;
+    height: 0;
+    margin: -3px;
+  }
+
+  .burger-bar:nth-of-type(3) {
+    transform: rotate(-45deg);
+    transition-delay: 0.3s;
+    height: 2px;
   }
 }
