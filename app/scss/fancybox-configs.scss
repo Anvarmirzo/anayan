@@ -1,35 +1,10 @@
-.maps-panzoom {
-  max-width: 100%;
-  overflow: hidden;
-  position: relative;
-
-  .panzoom__viewport {}
-
+.mobile-zoom {
   img {
+    height: 100vh;
     object-fit: cover;
   }
 
   @media (min-width: 768.98px) {
     display: none;
   }
-}
-
-.maps-panzoom__button {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  position: absolute;
-  bottom: 34px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 1;
-  min-width: 250px;
-  background: rgba(0, 0, 0, 0.6);
-  border-radius: 4px;
-  font-family: $roboto_family;
-  font-size: 16px;
-  line-height: 1.1875;
-  text-align: center;
-  padding: 12px 14px;
-  color: #fff;
 }
