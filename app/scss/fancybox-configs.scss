@@ -2,16 +2,10 @@
   max-width: 100%;
   overflow: hidden;
   position: relative;
-  min-height: 100vh;
 
-  .panzoom__viewport {
-    height: 100vh !important;
-    width: 100% !important;
-  }
+  .panzoom__viewport {}
 
   img {
-    width: 100% !important;
-    height: 100% !important;
     object-fit: cover;
   }
 
