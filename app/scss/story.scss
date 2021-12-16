@@ -310,6 +310,9 @@
 }
 
 .map-updates__map {
+  width: 100%;
+  object-fit: cover;
+
   @include block_575 {
     aspect-ratio: 1 / 1;
     object-fit: cover;
@@ -400,4 +403,9 @@
   justify-content: space-between;
   align-items: center;
   gap: 20px;
+}
+
+.history-end__img {
+  width: 100%;
+  object-fit: cover;
 }
