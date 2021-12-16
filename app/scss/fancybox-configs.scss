@@ -1,4 +1,6 @@
 .mobile-zoom {
+  position: relative;
+
   img {
     height: 100vh;
     object-fit: cover;
@@ -7,4 +9,22 @@
   @media (min-width: 768.98px) {
     display: none;
   }
+}
+
+.zoom-btn {
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  width: max-content;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 14px;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 4px;
+  font-family: $roboto_family;
+  font-size: 16px;
+  line-height: 1.1875;
+  color: #FFFFFF;
 }
