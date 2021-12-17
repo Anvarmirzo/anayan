@@ -9,6 +9,14 @@
   @include block_991 {
     padding: 25px 19px;
   }
+
+  a {
+    transition: all 0.3s;
+
+    &:hover {
+      color: #0038FF;
+    }
+  }
 }
 
 .footer-links {
@@ -49,6 +57,11 @@
   height: 40px;
   border: 1px solid #ABABAB;
   border-radius: 50%;
+  transition: all 0.3s;
+
+  &:hover {
+    border-color: #0038ff;
+  }
 }
 
 .footer-terms {

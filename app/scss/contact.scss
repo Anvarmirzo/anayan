@@ -51,6 +51,10 @@
     padding: 8px 12px;
     border-bottom: 1px solid rgba(53, 53, 53, 1);
     border-width: 0 0 1px 0;
+
+    &:focus {
+      outline: none;
+    }
   }
 }
 
@@ -63,6 +67,12 @@
   background-color: rgba(255, 255, 255, 0.5);
   border: 1px solid #000000;
   padding: 10px 68px;
+  transition: all 0.3s;
+
+  &:hover {
+    background-color: #000;
+    color: #fff;
+  }
 
   @include block_767 {
     width: 100%;
