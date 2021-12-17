@@ -1,3 +1,5 @@
+import './scripts/zoom';
+import './scripts/fancybox.umd.js';
 import { imageZoom } from './scripts/imageZoom';
 import { showNavMenu, showSearch } from './scripts/nav';
 import { initSliders } from './scripts/swiper-config';
