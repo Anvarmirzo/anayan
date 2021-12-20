@@ -95,8 +95,7 @@ export const filter = () => {
 		letterList.length &&
 			letterList.forEach((letter) => {
 				letter.innerHTML = '';
-				// creation "busket" to storage all created DOM Elems
-				const currentLetterName = [];
+				const currentLetterName = []; // will accumulate names of current letter
 
 				// iteration each place from data(JSON/Array/etc)
 				list.length &&
@@ -127,8 +126,24 @@ export const filter = () => {
 				// wrap and move sorted list to "busket"
 				currentLetterName.forEach((place) => {
 					const li = document.createElement('li');
-					li.textContent = place;
-					busket.appendChild(li);
+					const a = document.createElement('a');
+					const linkURL = place.replace(/[\s]/g, '');
+
+					a.href = `./map-${linkURL}.html/`;
+
+					if (place.includes('(')) {
+						let wrappedWithSpan = place
+							.replace(/[(]/g, '<span>(')
+							.replace(/[)]/g, ')</span>');
+
+						a.innerHTML = wrappedWithSpan;
+						li.appendChild(a);
+						busket.appendChild(li);
+					} else {
+						a.innerHTML = place;
+						li.appendChild(a);
+						busket.appendChild(li);
+					}
 				});
 
 				// save sorted list in object

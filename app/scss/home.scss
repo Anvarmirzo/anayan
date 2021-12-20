@@ -58,12 +58,14 @@
   text-transform: uppercase;
   color: #353535;
   max-width: 400px;
+  margin-top: 55px;
   margin-bottom: 29px;
 
   @include block_767 {
     max-width: 100%;
     font-size: 35px;
     margin-bottom: 22px;
+    margin-top: 0;
   }
 }
 
@@ -237,7 +239,8 @@
   justify-content: center;
   text-align: center;
   padding: 164px 277px 141px;
-  min-height: 100vh;
+  min-height: 568px;
+  height: 568px;
   background-image: url('../img/bg/gallery-bg.jpg');
   background-size: cover;
   background-repeat: no-repeat;
@@ -245,6 +248,11 @@
 
   @include block_767 {
     padding: 76px 32px 46px;
+    height: 363px;
+  }
+
+  @include block_575 {
+    min-height: 263px;
   }
 
   &::before {
@@ -282,6 +290,8 @@
 
 .shop {
   background-image: url('../img/bg/shop-bg.jpg');
+  height: 490px;
+  min-height: 490px;
 
   .gallery__title {
     margin-bottom: 18px;
@@ -488,6 +498,13 @@
 
       }
     }
+  }
+
+  span {
+    font-style: italic;
+    font-size: 14px;
+    line-height: 1.35;
+    color: #202020;
   }
 }
 

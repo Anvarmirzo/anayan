@@ -204,6 +204,13 @@
   }
 }
 
+.other-maps--padding {
+  @media (min-width:1919px) {
+    padding: 0 139px 0 257px;
+  }
+
+}
+
 .other-maps__wrapper {
   display: grid;
   grid-template-columns: repeat(2, 1fr);

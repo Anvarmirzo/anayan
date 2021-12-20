@@ -4,7 +4,7 @@ export function initSliders() {
 		effect: 'fade',
 		loop: true,
 		allowTouchMove: false,
-
+		speed: 1000,
 		pagination: {
 			el: '.swiper-pagination',
 			clickable: true,
@@ -17,7 +17,7 @@ export function initSliders() {
 			300: {
 				autoplay: {
 					disableOnInteraction: false,
-					delay: 4000,
+					delay: 6000,
 				},
 				allowTouchMove: false,
 			},
