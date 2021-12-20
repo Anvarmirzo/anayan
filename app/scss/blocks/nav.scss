@@ -33,6 +33,11 @@
   text-transform: uppercase;
   color: #FFFFFF;
   z-index: 2;
+  transition: all 0.3s;
+
+  &:hover {
+    color: rgb(168, 161, 161);
+  }
 }
 
 .responsive-nav {
@@ -90,6 +95,14 @@
     align-items: flex-start;
     row-gap: 40px;
     margin-right: 0;
+  }
+
+  a {
+    transition: all 0.3s;
+
+    &:hover {
+      color: rgb(168, 161, 161);
+    }
   }
 }
 
@@ -262,6 +275,7 @@
 
     &:hover {
       background-color: rgba(0, 0, 0, 1.0);
+      color: #fff;
 
       @include custom-media(1100px) {
         background-color: transparent;
@@ -296,6 +310,15 @@
       display: block;
       background-image: url('../img/svg/search-light.svg');
     }
+  }
+}
+
+.search--hover {
+  transition: all 0.3s;
+  color: #fff;
+
+  &:hover {
+    color: rgb(168, 161, 161);
   }
 }
 
@@ -402,17 +425,13 @@
   line-height: 1.1;
   background-color: transparent;
   color: #fff;
+  transition: all 0.3s;
 
+  &:hover {
+    color: rgb(168, 161, 161);
+  }
 
-  &::before {
-    content: '';
-    display: inline-block;
-    width: 9px;
-    height: 9px;
-    background-image: url('../img/svg/triangle.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
+  svg {
     margin-right: 15px;
   }
 }
