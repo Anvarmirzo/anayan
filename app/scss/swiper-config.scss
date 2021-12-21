@@ -32,9 +32,25 @@
   justify-content: flex-end;
   position: relative;
   padding: 0 95px 63px;
+  transition: all 1s;
+
 
   @include block_991 {
     padding: 26px 37px 26px 24px;
+  }
+
+  .container {
+    transform: translateY(20px);
+    opacity: 0;
+    transition: all 0.9s;
+  }
+
+  &.swiper-slide-active {
+    .container {
+      z-index: 2;
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 
   &::after {

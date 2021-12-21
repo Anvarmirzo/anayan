@@ -10,6 +10,7 @@ export function initSliders() {
 			clickable: true,
 		},
 		autoplay: {
+			delay: 6000,
 			disableOnInteraction: false,
 		},
 		breakpoints: {
@@ -17,7 +18,6 @@ export function initSliders() {
 			300: {
 				autoplay: {
 					disableOnInteraction: false,
-					delay: 6000,
 				},
 				allowTouchMove: false,
 			},

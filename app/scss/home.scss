@@ -505,6 +505,7 @@
     font-size: 14px;
     line-height: 1.35;
     color: #202020;
+    transition: all 0.3s;
   }
 }
 
@@ -562,4 +563,13 @@
   font-size: 18px;
   line-height: 1.38;
   color: #000000;
+
+  a {
+    transition: all 0.3s;
+
+    &:hover,
+    &:hover span {
+      color: #0038ff;
+    }
+  }
 }
