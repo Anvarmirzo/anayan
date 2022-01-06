@@ -5,8 +5,8 @@
 <body class="map-page">
 	@@include('blocks/nav.html')
 	<section>
-		<div class="interactive-map nav-area">
-			<img class="image maps-2__img" src="./img/maps/map-2.jpg" alt="">
+		<div class="interactive-map nav-area img-magnifier-container">
+			<img class="image maps-2__img" id="myimage" src="./img/maps/map-2.jpg" alt="">
 			<p class="msg"></p>
 		</div>
 		<div class="mobile-zoom">
@@ -71,27 +71,7 @@
 		</div>
 	</section>
 
-	<section class="other-maps">
-		<h2 class="other-maps__title">Other maps you may like</h2>
-		<div class="other-maps--padding">
-			<div class="other-maps__wrapper container">
-				<article class="other-maps__item">
-					<img class="other-maps__img" src="./img/blocks/deventer.jpg" alt="">
-					<a href="#" class="other-maps__text">
-						<h3 class="other-maps-item__title">Deventer</h3>
-						<span class="other-maps__country">Netherlands</span>
-					</a>
-				</article>
-				<article class="other-maps__item">
-					<img class="other-maps__img" src="./img/blocks/lviv.jpg" alt="">
-					<a href="#" class="other-maps__text">
-						<h3 class="other-maps-item__title">Lviv</h3>
-						<span class="other-maps__country">Ukraine</span>
-					</a>
-				</article>
-			</div>
-		</div>
-	</section>
+	@@include('blocks/other-maps.html')
 
 	@@include('blocks/footer.html')
 

@@ -48,6 +48,7 @@
 
 .two-hands-info {
   flex: 1;
+  padding-top: 55px;
 }
 
 .two-hands__title {
@@ -58,7 +59,6 @@
   text-transform: uppercase;
   color: #353535;
   max-width: 400px;
-  margin-top: 55px;
   margin-bottom: 29px;
 
   @include block_767 {
@@ -217,8 +217,8 @@
   line-height: 1.17;
   color: #353535;
   margin-left: 172px;
-  margin-bottom: 66px;
-  max-width: 706px;
+  margin-bottom: 12px;
+  max-width: 565px;
 
   @include block_991 {
     margin: 0 60px 15px;
@@ -242,8 +242,10 @@
   min-height: 568px;
   height: 568px;
   background-image: url('../img/bg/gallery-bg.jpg');
-  background-size: cover;
+  background-size: 100%;
   background-repeat: no-repeat;
+  background-position: center;
+  transition: 0.5s all;
   color: #FFFFFF;
 
   @include block_767 {
@@ -253,6 +255,10 @@
 
   @include block_575 {
     min-height: 263px;
+  }
+
+  &:hover {
+    background-size: 115%;
   }
 
   &::before {

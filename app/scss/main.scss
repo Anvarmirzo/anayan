@@ -17,7 +17,9 @@
 @import "maps";
 @import "story";
 
-
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   font-family: $basic_family;
@@ -84,5 +86,5 @@ a {
 }
 
 .nav-area {
-  padding-top: 57px;
+  padding-top: var(--nav-height);
 }

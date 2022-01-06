@@ -254,8 +254,9 @@
 
 .brush {
   position: absolute;
-  bottom: -38%;
-  left: -7%;
+  bottom: 0%;
+  left: 0%;
+  max-height: 365px;
 
   @include block_1199 {
     bottom: auto;
@@ -305,7 +306,6 @@
 }
 
 .artistic__img {
-  height: 40vh;
   max-height: 100%;
 }
 

@@ -40,3 +40,21 @@ export const showNavMenu = () => {
 		});
 	}
 };
+
+export const hideNavOnScroll = () => {
+	let prevScrollpos = window.pageYOffset;
+	const nav = document.getElementById('navbar');
+	if (nav) {
+		window.onscroll = function () {
+			const currentScrollPos = window.pageYOffset;
+
+			if (prevScrollpos > currentScrollPos) {
+				nav.style.top = '0';
+			} else {
+				nav.style.top = '-57px';
+			}
+
+			prevScrollpos = currentScrollPos;
+		};
+	}
+};

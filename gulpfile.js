@@ -86,6 +86,12 @@ function js() {
 		.pipe(dest(buildFolder + '/js'));
 }
 
+function libraries() {
+	return src(sourceFolder + '/js/libraries/**.js')
+		.pipe(uglify())
+		.pipe(dest(buildFolder + '/js/libraries'));
+}
+
 function img() {
 	return (
 		src(sourceFolder + '/img/**/*')
@@ -140,6 +146,16 @@ function serve() {
 	watch(sourceFolder + '/fonts/**/*', series(fonts)).on('change', sync.reload);
 }
 
-exports.build = series(clear, scss, js, img, sprite, fonts, html);
-exports.watch = series(clear, scss, js, img, sprite, fonts, html, serve);
+exports.build = series(clear, scss, js, libraries, img, sprite, fonts, html);
+exports.watch = series(
+	clear,
+	scss,
+	js,
+	libraries,
+	img,
+	sprite,
+	fonts,
+	html,
+	serve,
+);
 exports.clear = clear;
