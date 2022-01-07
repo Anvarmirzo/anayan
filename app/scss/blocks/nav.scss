@@ -207,7 +207,11 @@
 .dropdown {
   position: relative;
 
-  &:hover {
+  &.active {
+    .triangle {
+      transform: rotate(0deg);
+    }
+
     .dropdown-list {
       opacity: 1;
       visibility: visible;
@@ -218,6 +222,24 @@
       }
     }
   }
+
+  @media (min-width:1101px) {
+    &:hover {
+      .triangle {
+        transform: rotate(0deg);
+      }
+
+      .dropdown-list {
+        opacity: 1;
+        visibility: visible;
+        height: auto;
+
+        @include custom-media(1100px) {
+          margin-top: 10px;
+        }
+      }
+    }
+  }
 }
 
 
@@ -225,12 +247,6 @@
   display: flex;
   align-items: center;
   column-gap: 8px;
-
-  &:hover {
-    .triangle {
-      transform: rotate(0deg);
-    }
-  }
 
   .triangle {
     @include custom-media(1100px) {
@@ -462,8 +478,8 @@
   background-color: transparent;
   display: none;
   z-index: 2;
-  width: 40px;
-  height: 40px;
+  width: 23px;
+  height: 23px;
   transition: all 0.3s;
 
   @include custom-media(1100px) {

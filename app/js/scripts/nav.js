@@ -58,3 +58,26 @@ export const hideNavOnScroll = () => {
 		};
 	}
 };
+
+export const showDropdown = () => {
+	const dropdown = document.querySelector('.dropdown');
+	const toggler = document.querySelector('.dropdown-toggler');
+	const isHover = (e) => e.parentElement.querySelector(':hover') === e;
+
+	if (dropdown && toggler) {
+		document.addEventListener('click', function (e) {
+			if (window.innerWidth < 1101) {
+				if (
+					e.target.classList.contains('dropdown') ||
+					e.target.classList.contains('dropdown-toggler')
+				) {
+					dropdown.classList.toggle('active');
+				} else {
+					if (dropdown.classList.contains('active')) {
+						dropdown.classList.remove('active');
+					}
+				}
+			}
+		});
+	}
+};

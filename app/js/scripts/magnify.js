@@ -3,7 +3,7 @@ export const magnify = (imgID, zoom) => {
 	img = document.getElementById(imgID);
 	if (img) {
 		/* Создать увеличительное стекло: */
-		glass = document.createElement('DIV');
+		glass = document.createElement('div');
 		glass.setAttribute('class', 'img-magnifier-glass');
 
 		/* Вставить увеличительное стекло: */
@@ -25,6 +25,7 @@ export const magnify = (imgID, zoom) => {
 		/* а также для сенсорных экранов: */
 		glass.addEventListener('touchmove', moveMagnifier);
 		img.addEventListener('touchmove', moveMagnifier);
+
 		function moveMagnifier(e) {
 			let pos, x, y;
 			/* Предотвратите любые другие действия, которые могут возникнуть при перемещении по изображению */
