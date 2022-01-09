@@ -4,6 +4,7 @@ import { imageZoom } from './scripts/imageZoom';
 import {
 	hideNavOnScroll,
 	showDropdown,
+	showLangDropdown,
 	showNavMenu,
 	showSearch,
 } from './scripts/nav';
@@ -15,6 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	showSearch();
 	showNavMenu();
 	showDropdown();
+	showLangDropdown();
 	hideNavOnScroll();
 	scrollPolyfill();
 	imageZoom();

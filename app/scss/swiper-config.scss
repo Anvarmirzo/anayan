@@ -1,11 +1,19 @@
 .maps-slider {
   height: 736px;
 
+  @include custom-media(1100px) {
+    height: 559px;
+  }
+
+  @include block_767 {
+    min-height: 100vh;
+  }
+
   .swiper-pagination {
     left: 10px;
     right: auto;
 
-    @include block_991 {
+    @include block_575 {
       display: none;
     }
   }
@@ -36,6 +44,10 @@
 
 
   @include block_991 {
+    padding: 26px 37px 26px 74px;
+  }
+
+  @include block_575 {
     padding: 26px 37px 26px 24px;
   }
 
@@ -89,17 +101,10 @@
 .maps-slider-text {
   position: relative;
   z-index: 2;
-  max-width: 50%;
+  width: max-content;
+  max-width: 100%;
   color: #FFFFFF;
   font-family: $roboto_family;
-
-  @include block_1199 {
-    max-width: 80%;
-  }
-
-  @include block_767 {
-    max-width: 100%;
-  }
 }
 
 .maps-slider__title {
@@ -107,10 +112,19 @@
   line-height: 1;
   margin-bottom: 15px;
 
-  @include block_767 {
+  @include block_1199 {
+    max-width: 352px;
+  }
+
+  @include block_991 {
+    margin-bottom: 11px;
     font-size: 45px;
     line-height: 1.11;
     color: #FFFFFF;
+  }
+
+  @include block_575 {
+    max-width: 100%;
   }
 }
 
@@ -121,7 +135,13 @@
   color: #FFFFFF;
   margin-bottom: 14px;
 
+  @include block_991 {
+    max-width: 403px;
+    margin-bottom: 10px;
+  }
+
   @include block_575 {
+    max-width: 344px;
     margin-bottom: 32px;
   }
 }
@@ -192,6 +212,10 @@
 
   @include block_1199 {
     padding: 0 20px 23px;
+  }
+
+  @include block_767 {
+    padding: 0 0 23px;
   }
 
   .swiper-slide {

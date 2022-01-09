@@ -40,18 +40,20 @@ export function initSliders() {
 			300: {
 				slidesPerView: 1,
 				centeredSlides: true,
+				spaceBetween: 20,
 			},
 			575: {
 				spaceBetween: 70,
 				slidesPerView: 2,
 				centeredSlides: false,
 			},
-			spaceBetween: 20,
 			767: {
-				slidesPerView: 3,
+				spaceBetween: 100,
+				slidesPerView: 2.45,
 			},
 			991: {
 				spaceBetween: 45,
+				slidesPerView: 3,
 			},
 			1200: {
 				spaceBetween: 115,
