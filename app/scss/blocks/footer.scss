@@ -49,14 +49,25 @@
     gap: 19px 185px;
   }
 
-  li:first-child {
-    min-width: 147px;
-
-    @include block_575 {
-      min-width: auto;
-    }
+  @include block_480 {
+    gap: 20px;
   }
 
+  li {
+    &:first-child {
+      min-width: 147px;
+
+      @include block_575 {
+        min-width: auto;
+      }
+    }
+
+    &:nth-child(n+6) {
+      @include block_575 {
+        text-align: right;
+      }
+    }
+  }
 }
 
 .footer-social {

@@ -1,4 +1,3 @@
-import { fancyboxConfig } from './scripts/fancybox-config';
 import { filter, shortFilter } from './scripts/filter';
 import { imageZoom } from './scripts/imageZoom';
 import {
@@ -23,6 +22,5 @@ document.addEventListener('DOMContentLoaded', function () {
 	initSliders();
 	filter();
 	shortFilter();
-	fancyboxConfig();
 	textareaHeight();
 });
