@@ -13,13 +13,25 @@
   @include block_991 {
     background-size: 300px;
     padding: 93px 92px 0;
+    background-position: 100% 11px;
   }
 
   @include block_767 {
-    padding: 93px 20px 0;
+    padding: 93px 39px 0;
     background-size: 270px;
   }
 
+  @include block_575 {
+    padding: 93px 20px 0;
+    background-size: 333px;
+    background-position: 100% -50px;
+  }
+}
+
+.contact-page__wrapper {
+  @include block_767 {
+    max-width: 460px;
+  }
 }
 
 .contact-page__title {
@@ -83,7 +95,7 @@
     color: #fff;
   }
 
-  @include block_767 {
+  @include block_575 {
     width: 100%;
   }
 }
@@ -92,6 +104,22 @@
   margin-bottom: 62px;
 
   @include block_767 {
+    margin-bottom: 39px;
+  }
+
+  @include block_575 {
     margin-bottom: 21px;
+  }
+}
+
+.contact-page__img {
+  @include block_767 {
+    display: block;
+    max-width: 294px;
+    margin: 0 auto;
+  }
+
+  @include block_480 {
+    max-width: 100%;
   }
 }
