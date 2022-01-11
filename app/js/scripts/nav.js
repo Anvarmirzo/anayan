@@ -1,20 +1,26 @@
 export const showSearch = () => {
-	const showSearch = document.getElementById('show-search-btn');
-	const searchInput = document.getElementById('header-search-form');
+	const wrappers = document.querySelectorAll('.header-widgets');
 
-	if (showSearch && searchInput) {
-		showSearch.addEventListener('click', function (e) {
-			e.preventDefault();
-			e.stopPropagation();
-			showSearch.classList.toggle('active');
-			searchInput.classList.toggle('active');
+	wrappers.forEach((wrapper) => {
+		const showSearch = wrapper.querySelector('#show-search-btn');
+		const searchForm = wrapper.querySelector('#header-search-form');
 
-			document.addEventListener('click', function (e) {
+		if (showSearch && searchForm) {
+			showSearch.addEventListener('click', function (e) {
+				e.preventDefault();
+				e.stopPropagation();
 				showSearch.classList.toggle('active');
-				searchInput.classList.toggle('active');
+				searchForm.classList.toggle('active');
+
+				document.addEventListener('click', function (e) {
+					if (!showSearch.classList.contains('active')) {
+						showSearch.classList.toggle('active');
+						searchForm.classList.toggle('active');
+					}
+				});
 			});
-		});
-	}
+		}
+	});
 };
 
 export const showNavMenu = () => {
