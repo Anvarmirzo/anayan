@@ -4,18 +4,28 @@ export const showSearch = () => {
 	wrappers.forEach((wrapper) => {
 		const showSearch = wrapper.querySelector('#show-search-btn');
 		const searchForm = wrapper.querySelector('#header-search-form');
+		const input = wrapper.querySelector('.header-search__input');
 
 		if (showSearch && searchForm) {
 			showSearch.addEventListener('click', function (e) {
 				e.preventDefault();
 				e.stopPropagation();
-				showSearch.classList.toggle('active');
-				searchForm.classList.toggle('active');
+
+				showSearch.classList.remove('active');
+				searchForm.classList.add('active');
+				setTimeout(() => {
+					input.focus();
+				}, 500);
 
 				document.addEventListener('click', function (e) {
-					if (!showSearch.classList.contains('active')) {
-						showSearch.classList.toggle('active');
-						searchForm.classList.toggle('active');
+					e.stopPropagation();
+
+					if (
+						!showSearch.classList.contains('active') &&
+						input !== document.activeElement
+					) {
+						showSearch.classList.add('active');
+						searchForm.classList.remove('active');
 					}
 				});
 			});

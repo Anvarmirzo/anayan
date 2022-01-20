@@ -44,6 +44,11 @@
 .responsive-nav {
   display: flex;
 
+  @include custom-media(1240px) {
+    flex: 1;
+    justify-content: space-between;
+  }
+
   @include custom-media(1100px) {
     display: none;
     flex-direction: column;
@@ -85,7 +90,8 @@
 
   @include custom-media(1240px) {
     position: relative;
-    margin-right: 47px;
+    margin-right: 0;
+    margin-left: 9%;
     transform: none;
     left: auto;
     top: auto;
