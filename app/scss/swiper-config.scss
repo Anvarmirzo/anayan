@@ -179,8 +179,7 @@
 
 .maps-slider-links {
   font-family: $roboto_family;
-  width: max-content;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: space-between;
   position: relative;
