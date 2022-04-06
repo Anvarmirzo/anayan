@@ -1,17 +1,20 @@
 .footer {
-  padding: 40px 139px 110px 257px;
   background-color: #F3F3F3;
   background-image: url('../img/bg/footer-bg.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
 
-  @include block_991 {
-    padding: 50px 20px 70px 73px;
-  }
+  .container {
+    padding: 40px 139px 20px 257px;
 
-  @include block_575 {
-    padding: 25px 19px;
+    @include block_991 {
+      padding: 50px 20px 70px 73px;
+    }
+
+    @include block_575 {
+      padding: 25px 19px;
+    }
   }
 
   a {
@@ -110,5 +113,16 @@
 
   @include block_575 {
     justify-content: space-between;
+  }
+}
+
+.footer-bottom {
+  padding-top: 110px;
+  font-size: 12px;
+  text-align: center;
+  padding-bottom: 24px;
+
+  p {
+    padding-bottom: 12px;
   }
 }
