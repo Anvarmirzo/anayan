@@ -17,12 +17,12 @@
 	<link rel="manifest" href="./img/favicon/site.webmanifest">
 	<link rel="mask-icon" href="./img/favicon/safari-pinned-tab.svg" color="#5bbad5">
 	<!-- Main CSS -->
-	<link rel="stylesheet" href="./css/main.css?t=1646752065678">
+	<link rel="stylesheet" href="./css/main.css?t=1649271155100">
 </head>
 
 <body>
-	<div class="contact-page-body">
-		<nav class="header-nav" id="navbar">
+<div class="contact-page-body">
+  <nav class="header-nav" id="navbar">
 	<div class="header-nav--flex container">
 		<a class="header__logo" href="./index.html" title="Home">
 			<svg width="31" height="32" viewBox="0 0 31 32" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -108,29 +108,38 @@
 		</div>
 	</div>
 </nav>
-		<main class="contact-page">
-			<section class="nav-area container">
-				<div class="contact-page__wrapper">
-					<h1 class="title contact-page__title">Contact US</h1>
-					<p class="subtitle contact-page__subtitle">If you want to order an exclusive map of your neighborhood or have
-						any
-						other questions, please
-						contact us
-						without hesitation.</p>
-					<form class="contract-form">
-						<div class="contact-form-fields">
-							<input type="text" id="name" placeholder="Your name">
-							<input type="email" id="email" placeholder="Your email">
-							<textarea type="text" id="msg" placeholder="Your message"></textarea>
-						</div>
-						<button class="send-btn" type="submit">Send</button>
-					</form>
-				</div>
-				<img class="contact-page__img" src="./img/blocks/malbork.png" alt="">
-			</section>
-		</main>
-	</div>
-	<!--! Footer -->
+  <main class="contact-page">
+    <section class="nav-area container">
+      <div class="contact-page__wrapper">
+        <h1 class="title contact-page__title">Contact US</h1>
+        <p class="subtitle contact-page__subtitle">If you want to order an exclusive map of your neighborhood or have
+          any
+          other questions, please
+          contact us
+          without hesitation.</p>
+        <form id="contact-form" class="contract-form">
+          <div class="contact-form-fields">
+            <input name="name" type="text" id="contract-form-name" placeholder="Your name">
+            <input name="email" type="email" id="contract-form-email" placeholder="Your email">
+            <textarea name="message" type="text" id="contract-form-msg" placeholder="Your message"></textarea>
+          </div>
+          <button class="send-btn" type="submit">Send</button>
+        </form>
+      </div>
+      <img class="contact-page__img" src="./img/blocks/malbork.png" alt="">
+    </section>
+  </main>
+</div>
+<div class="contact-modal" id="contact-modal">
+  <div class="contact-modal__wrapper">
+    <div class="contact-modal__content">
+      <h2 class="contact-modal__title">Thank you for your message</h2>
+      <p class="contact-modal__text">We will reply to you as soon as possible</p>
+      <img class="contract-modal__img" width="508px" height="317px" src="./img/blocks/malta-knight.png" alt="">
+    </div>
+  </div>
+</div>
+<!--! Footer -->
 <footer class="footer">
     <div class="container">
         <div class="footer-links">
@@ -175,7 +184,7 @@
 <!-- Swiper JS -->
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <!-- Main js -->
-<script src="./js/main.js?t=1646752065678"></script>
+<script src="./js/main.js?t=1649271155100"></script>
 </body>
 
 </html>

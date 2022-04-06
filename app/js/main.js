@@ -1,4 +1,5 @@
 import { filter, shortFilter } from './scripts/filter';
+import {formSubmit} from './scripts/form';
 import { imageZoom } from './scripts/imageZoom';
 import {
 	hideNavOnScroll,
@@ -23,4 +24,5 @@ document.addEventListener('DOMContentLoaded', function () {
 	filter();
 	shortFilter();
 	textareaHeight();
+  formSubmit();
 });

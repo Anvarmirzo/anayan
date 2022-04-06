@@ -123,3 +123,77 @@
     max-width: 100%;
   }
 }
+
+.contact-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s;
+  opacity: 0;
+  visibility: hidden;
+
+  @include block_575{
+    padding: 10px;
+  }
+
+  &.active {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.contact-modal__wrapper {
+  padding: 10px;
+  background-color: #fff;
+  width: 690px;
+  height: 564px;
+
+  @include block_767 {
+    width: 100%;
+    margin: 0 10%;
+  }
+
+  @include block_575{
+    margin: 0;
+    height: auto;
+  }
+}
+
+.contact-modal__content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 12px;
+  justify-content: center;
+  max-width: 100%;
+  border: 1px solid #000000;
+  height: 100%;
+  padding: 80px 20px 0;
+}
+
+.contact-modal__title {
+  width: 335px;
+  max-width: 100%;
+  font-family: $forum_family;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 1.08;
+  text-transform: uppercase;
+  color: #353535;
+}
+
+.contract-modal__img {
+  margin-top: auto;
+
+  @include block_575{
+    height: auto;
+  }
+}
