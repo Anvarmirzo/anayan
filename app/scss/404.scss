@@ -1,0 +1,43 @@
+.error-page {
+  background-color: #C4C4C4;
+  background-image: url('../img/bg/404.jpg');
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+  height: 1100px;
+  padding: 204px 49px;
+  text-align: center;
+
+  @include block_575 {
+    max-height: 875px;
+    align-items: flex-start;
+  }
+}
+
+.error-page__title {
+  font-family: $forum_family;
+  font-weight: 400;
+  font-size: 120px;
+  line-height: 132px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #353535;
+}
+
+.block-mobile {
+  @include block_575 {
+    display: block;
+  }
+}
+
+.error-page__subtitle {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.375;
+  color: #000000;
+}
+
+.error-page__link {
+  color: #0038ff;
+  border-bottom: 1px solid #0038FF;
+}
