@@ -24,10 +24,11 @@ html {
 
 body {
   font-family: $basic_family;
+  -webkit-font-smoothing: antialiased;
 
-  &.hidden {
-    overflow: hidden;
-  }
+  // &.hidden {
+  //   overflow: hidden;
+  // }
 }
 
 button,
